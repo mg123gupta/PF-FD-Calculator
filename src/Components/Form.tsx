@@ -47,8 +47,8 @@ export default class Form extends Component {
 
     // f=P[({(1+i)^n}-1)/i]
   };
-  selectoption = (e: React.FormEvent<HTMLInputElement>) => {
-    const {value}=e.target as HTMLInputElement
+  selectoption = (e:any) => {
+    const {value}=e.target
     const val: number = parseInt(value);
     this.setState({
       selectedPeriod: val,
