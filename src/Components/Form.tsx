@@ -178,7 +178,7 @@ export default class Form extends Component {
                   {tab === 1 ? (
                     <select
                       value={selectedPeriod}
-                      onChange={(e: React.FormEvent<HTMLInputElement>)=> this.selectoption(e)}
+                      onChange={(e)=> this.selectoption(e)}
                     >
                       <option value={1}>Years</option>
                       <option value={12}>Months</option>
