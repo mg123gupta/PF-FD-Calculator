@@ -29,7 +29,7 @@ export default class Form extends Component {
   };
 
   handleInput = (e: React.FormEvent<HTMLInputElement>) => {
-    const {name, value}=e.target as HTMLInputElement
+    const {name, value}=e.target
     this.setState({ [name]: parseInt(value) });
   };
 
@@ -47,7 +47,7 @@ export default class Form extends Component {
 
     // f=P[({(1+i)^n}-1)/i]
   };
-  selectoption = (e:any) => {
+  selectoption = (e) => {
     const {value}=e.target
     const val: number = parseInt(value);
     this.setState({
